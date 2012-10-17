@@ -4,7 +4,7 @@ class MockUpImportError(Exception):
     pass
 
 class LazyImporter(object):
-    """Lazy importer"""
+    """Lazy importer of attribute lookup"""
 
     def __init__(self, top_path, module_name):
         self.__name__ = top_path + '.' + module_name
